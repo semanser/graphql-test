@@ -12,8 +12,8 @@ const apolloClient = new ApolloClient({
 
 const query = gql`
   {
-    polls {
-      title
+    users {
+      name
     }
   }
 `
@@ -23,4 +23,3 @@ apolloClient.query({
 }).then(result => {
   console.log(result)
 })
-
